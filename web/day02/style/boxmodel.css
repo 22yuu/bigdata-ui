@@ -1,0 +1,16 @@
+.divParent{
+    width: 200px; height:200px;
+    background-color: yellow;
+    margin-top:20px; margin-left: 20px;
+    /*내자식을 부모입장에서 간격을 유지시키는 기능*/
+    padding-top:20px; padding-left:20px;
+    /*자신의 경계선*/
+    border:10px solid green;
+    box-shadow: 5px 5px 10px #000;
+
+}
+
+.divChild {
+    width:100px; height:100px;
+    background-color: red;
+}

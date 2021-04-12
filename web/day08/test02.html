@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script>
+        $(function(){
+            //txt의 형제들에게 동적변화를 주자.
+            $(".txt").siblings().css({
+                "background-color":"green",
+                "border":"1px solid red"
+            });
+
+            //wrap의 자식들에게 변화를 주자.
+            $("#wrap p").css();
+
+            //wrap의 자식중 h1 태그에 변화를 주자.
+            $("#wrap h1").css();
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <h1>인접관계 선택자</h1>
+        <p>내용1</p>
+        <p class="txt">내용2</p>
+        <p>내용3</p>
+        <p>내용4</p>
+    </div>
+</body>
+</html>

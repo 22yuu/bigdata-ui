@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            * {
+                margin: 0 auto;     padding:0;
+                list-style:none; font-family: "맑은 고딕";
+            }
+
+            a{ text-decoration: none;}
+            #app { margin-top:50px; width:1300px; height: auto; padding: 0;}
+            /* header css area */
+            #header { width: 100%; height: 80px; border: 1px solid red; display:flex;}
+            #header .logo { width: 20%; background-color: orange; }
+            #header .menu {width: 80%; background-color: blanchedalmond;}
+
+            /* img slider css area */
+            #img-slider-wrapper { width: 100%; height: 200px; }
+            #img-slider-wrapper .img-slider {width: 100%; height: 200px; background-color: blue;}
+
+            /* contents css area */
+            #contents-wrapper { width: 100%; height: 400px; position: relative;}
+            #contents-wrapper .content:nth-child(1) { width:325px; height: 200px; border:1px solid black; position: absolute; top:0; left: 0;}
+            #contents-wrapper .content:nth-child(2) { width:325px; height: 200px; border:1px solid black; position: absolute; top:0; left: 25%;}
+            #contents-wrapper .content:nth-child(3) { width:325px; height: 200px; border:1px solid black; position: absolute; top:50%; left: 0;}
+            #contents-wrapper .content:nth-child(4) { width:325px; height: 200px; border:1px solid black; position: absolute; top:50%; left: 25%;}
+            #contents-wrapper .content:last-child { width: 650px; height: 400px;  border: 1px solid black;position: absolute; left: 50%;}
+
+
+            /* footer css area */
+            #footer { width: 100%; height: 150px; background-color: brown;}
+            
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <div id="header">
+                <div class="logo" style="line-height: 80px;text-align: center;">로고</div>
+                <div class="menu" style="line-height: 80px;text-align: center;">메뉴</div>
+            </div>
+
+            <div id="img-slider-wrapper">
+                <div class="img-slider" style="line-height: 200px; text-align: center;"> 이미지 슬라이더</div>
+            </div>
+
+
+            <div id="contents-wrapper">
+                <div class="content" style="line-height: 200px;text-align: center;">1</div>
+                <div class="content" style="line-height: 200px;text-align: center;">2</div>
+                <div class="content" style="line-height: 200px;text-align: center;">3</div>
+                <div class="content" style="line-height: 200px;text-align: center;">4</div>
+                <div class="content" style="line-height: 400px;text-align: center;">last</div>
+            </div>
+            
+            <div id="footer" style="line-height: 150px;text-align: center;">footer</div>
+        </div>
+        
+    </body>
+</html>

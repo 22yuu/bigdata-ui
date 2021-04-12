@@ -1,0 +1,20 @@
+나는 자동차영업사원으로부터 고객관리 프로그램을 의뢰받았다. 영업사원은
+고객의 이름, 주소, 전화번호, 나이, 직업, 연봉, 보유차종에 대한 정보를 관리하기를 원한다.
+db구축후 고객을 관리하는 프로그램을 작성하시오.
+
+
+alter table emergency add column no int auto_increment primary key;
+db02
+create table member (
+	name varchar(20),
+	juso varchar(20),
+	tel varchar(20),
+	age int(3),
+	job varchar(20),
+	income int(30),
+	car varchar(20)
+);
+
+insert into member values('홍길동','서울시','1111',42,'사장',5000,,'제네시스');
+insert into member values('이진유','부산시','2222',28,'사장',10000,'포르쉐');
+insert into member values('유관순','서울시','3333',36,'회사원',4800,'아반떼');

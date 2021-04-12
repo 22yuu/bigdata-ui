@@ -1,0 +1,26 @@
+4.positon: 박스를 이동시키는 속성.
+	4.1 static:기본속성
+	4.2 relative: 상대적
+	4.3 absolute: 절대적
+	4.4 fixed: 고정
+	커서의 관점에서 각각의 기능을 이해한다.
+	커서를 다음박스에게 내주는 타입: static, relative
+	커서를 내가 갖고 있는 타입: absolute
+
+	좌표를 찍는 관점에서 각각의 기능을 이해한다.
+	좌표를 찍을수 없는 녀석:static
+	좌표를 찍을수 있는 녀석: relative, absolute
+	
+	absolute 길들이기....
+	absolute을 길들일 수 있는 녀석:relative, absolute
+	absolute를 길들일 수 없는 녀석:static
+
+	relavive와 absolute 좌표를 찍은 후 커서는 어디?
+	이동만 한것이지 커서는 그대로이다.
+
+5.display
+	5.1 none
+	5.2 inline
+	5.3 inline-block
+	5.4 flex(justify aligin, flexwrap)
+6.float

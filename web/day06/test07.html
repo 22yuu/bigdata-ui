@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+        
+        function send() {
+            var point = parseInt(frm1.point.value);
+            // 만약 60점 이상이면 합격, 미만이면 불합격.
+            var final = check(point);
+            if(check(point) == true) {
+                alert("합격");
+            } else {
+                alert("불합격");
+            }
+        }
+        function check(p) {
+            var result;
+            if(p>=60) {
+                result=true;
+            } else {
+                result=false;
+            }
+            return result;
+        }
+
+	</script>
+</head>
+<body>
+    <form name="frm1">
+        <input type="text" name="point">
+        <input type="button" value="ok" onclick="send()">
+    </form>
+</body>
+</html>

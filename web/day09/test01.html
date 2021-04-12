@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" href="res/style06.css">
+    <script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script>
+        $(function(){
+            $(".btn2").hide();
+            $(".btn1").click(function(){
+                $(".box").fadeOut(1000, "linear", function(){
+                    {
+                        $(".btn1").hide();
+                        $(".btn2").show();
+                    }
+                });
+            });
+            $(".btn2").click(function(){
+                $(".box").fadeIn(1000, "swing", function(){
+                    $(".btn2").hide();
+                    $(".btn1").show();
+                });
+            });
+        });
+    </script>
+    <style>
+        .content {
+            width:400px; background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <button class="btn1">slideUp</button>
+        <button class="btn2">fadeIn</button>
+    </p>
+    
+    <div class="box">
+        <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Numquam quas et sunt vero minima odio officia eum eaque accusantium harum,
+            assumenda ea illo provident possimus nihil delectus voluptate incidunt vitae.
+        </div>
+    </div> 
+</body>
+</html>

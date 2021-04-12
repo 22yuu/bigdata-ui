@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            #divP {
+                width: 900px; height: 150px;
+                border: 2px solid #666;
+                display: flex; /* 부모입장에서 자식을 한방에 나란히 수평정렬 */
+                justify-content: center; /* 수평 중앙 정렬 */
+                align-items: center; /* 수직 중앙 정렬*/
+            }
+
+            .divC { 
+                width: 200px; height: 140px;
+                border: 2px solid red; margin-left:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="divP">
+            <div class="divC">1</div>
+            <div class="divC">2</div>
+            <div class="divC">3</div>
+            <div class="divC">4</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script>
+            function result() {
+                var kor = parseInt(frm1.kor.value);
+                var eng = parseInt(frm1.eng.value);
+                var mat = parseInt(frm1.mat.value);
+
+                var total = kor + eng + mat;
+                var avg = total / 3;
+
+                alert("당신의 점수는 총점 : " + total + ", 평균 : " + avg);
+            }
+        </script>
+    </head>
+    <body>
+        <form name="frm1">
+            국어 : <input type="text" name="kor"><br>
+            영어 : <input type="text" name="eng"><br>
+            수학 : <input type="text" name="mat"><br>
+            <input type="button" value="결과 출력" onclick="result()">
+        </form>
+    </body>
+</html>

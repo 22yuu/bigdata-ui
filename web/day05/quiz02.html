@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script>
+            /* 부장 : 기본급 200, 과장 기본급 150, 대리 기본급 120
+                급여구하는 공식 : 기본급 + (시간외근무 * 2)
+            */
+            function result() {
+                var position =frm1.position.value;
+                var payment;
+                var over_time_payment = frm1.over_time.value;
+                var total_payment;
+
+                if(position =="부장") {
+                    payment = 200;
+                } else if (position == "과장") {
+                    payment = 150;
+                } else {
+                    payment = 120;
+                }
+
+                total_payment = payment + (over_time_payment * 2);
+
+                alert("당신의 급여는 " + total_payment + "만원 입니다.")
+            }
+        </script>
+    </head>
+    <body>
+
+        <form name="frm1">
+            직급
+            <select name="position">
+                <option>부장</option>
+                <option>과장</option>
+                <option>대리</option>
+            </select>
+            <br>
+            시간외 근무 <input type="text" name="over_time"> <br>
+            <input type="button" value="결과출력" onclick="result()">
+            
+        </form>
+    </body>
+</html>

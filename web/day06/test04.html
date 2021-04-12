@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+        function send() {
+            var order = frm1.order.value;
+            var addr = frm1.addr.value;
+            var payment = frm1.payment.value;
+            var price = parseInt(frm1.price.value);
+            var str = order + "님 감사드립니다. 배송지는 "+addr+"이며 금액은 " +price+"이며 결제 방법은 " +payment+"를 선택하셨습니다. 정보가 맞나요?"
+            alert(str);
+            
+        }
+	</script>
+</head>
+<body>
+    <form name="frm1">
+        주문자 : <input type="text" name="order"><br>
+        배송지 : <input type="text" name="addr"><br>
+        금액 : <input type="text" name="price"><br>
+        결제 방법 : 
+        <select name="payment">
+            <option>무통장입금</option>
+            <option>신용카드</option>
+            <option>포인트결제</option>
+        </select>
+        <input type="button" value="주문하기" onclick="send()">
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+        function send() {
+            var mom = frm1.mom.value;
+            var dad = frm1.dad.value;
+            var bro = frm1.bro.value;
+            var age = parseInt(frm1.my_age.value);
+            var str = "저희 가족을 소개합니다. \n 엄마는" + mom+"이구요 저보다 딱 2배 나이가 많은  " + (age * 2)+"살입니다.\n 아빠는 "+dad +"이구요 엄마보다 2살많은 "
+                 + (age*2+2)+"살이구요.\n 동생은 저보다 5살 어린 " + (age-5)+"살 입니다. 우리 " + bro + "잘 부탁해요.";
+
+            alert(str);
+            
+        }
+	</script>
+</head>
+<body>
+    <form name="frm1">
+        내 나이 : <input type="text" name="my_age"><br>
+        엄마 : <input type="text" name="mom"><br>
+        아빠 : <input type="text" name="dad"><br>
+        동생 : <input type="text" name="bro"><br>
+        <input type="button" value="출력" onclick="send()">
+        
+    </form>
+</body>
+</html>

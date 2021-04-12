@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function send(){
+			if(confirm("정말로 시작하시겠습니까?")){
+				var i=prompt("몇단을 입력할까요?");
+				var j=parseInt(i);
+				for(var k=1;k<=9;k++){
+	document.write(j+" * "+k+" = "+(j*k)+"<br>");
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="구구단외기시작" onclick="send()">
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+        function fun_plus() {
+            var num1 = parseInt(frm1.v1.value);
+            var num2 = parseInt(frm1.v2.value);
+            var hap = num1 + num2;
+            alert("합은 " + hap + " 입니다.")
+        }
+        function fun_plus() {
+            var num1 = parseInt(frm1.v1.value);
+            var num2 = parseInt(frm1.v2.value);
+            var hap = num1 + num2;
+            alert("합은 " + hap + " 입니다.")
+        }
+        function fun_minus() {
+            var num1 = parseInt(frm1.v1.value);
+            var num2 = parseInt(frm1.v2.value);
+            var result = num1 - num2;
+            alert("결과는 " + result + " 입니다.")
+        }
+        function fun_multi() {
+            var num1 = parseInt(frm1.v1.value);
+            var num2 = parseInt(frm1.v2.value);
+            var result = num1 * num2;
+            alert("결과는 " + result + " 입니다.")
+        }
+        function fun_div() {
+            var num1 = parseInt(frm1.v1.value);
+            var num2 = parseInt(frm1.v2.value);
+            var result = num1 / num2;
+            alert("결과는 " + result + " 입니다.")
+        }
+        function fun_na() {
+            var num1 = parseInt(frm1.v1.value);
+            var num2 = parseInt(frm1.v2.value);
+            var result = num1 % num2;
+            alert("결과는 " + result + " 입니다.")
+        }
+	</script>
+</head>
+<body>
+    <form name="frm1">
+        <input type="text" name="v1"><br>
+        <input type="text" name="v2"><br>
+        <input type="button" value=" + " onclick="fun_plus()">
+        <input type="button" value=" - " onclick="fun_minus()">
+        <input type="button" value=" * " onclick="fun_multi()">
+        <input type="button" value=" / " onclick="fun_div()">
+        <input type="button" value=" % " onclick="fun_na()">
+    </form>
+</body>
+</html>

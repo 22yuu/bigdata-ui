@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+        function send() {
+            var id = frm1.id.value;
+            var pwd = frm1.pwd.value;
+            var gender = frm1.gender.value;
+            var level = frm1.level.value;
+            var java = document.getElementById("java");
+            var c = document.getElementById("c");
+            var web = document.getElementById("web");
+            var python = document.getElementById("python");
+            var msg = frm1.msg.value;
+            
+            var interest_str = chk_interest(java,c,web,python);
+            
+            alert(interest_str);
+
+            var str = "아이디는 " + id + " 비번 " + pwd + " 성별 " + gender + " 관심사항은 " + interest_str + " 남기고 싶은 말은 " + msg;
+            alert(str);
+
+        }
+
+        function chk_interest(java, c, web, python) {
+            
+            var str = " ";
+            if(java.checked) {
+                str += java.value + " ";
+            }
+            if(c.checked) {
+                str += c.value + " ";
+            }
+            if (web.checked) {
+                str += web.value + " ";
+            }
+            if (python.checked){
+                str += python.value + " ";
+            }
+
+            return str;
+            
+        }
+	</script>
+</head>
+<body>
+    <form name="frm1">
+        아이디: <input type="text" name="id"> <br>
+        비밀번호: <input type="password" name="pwd"> <br>
+        성별 : <input type="radio" name="gender" value="남자">남자 <input type="radio" name="gender" value="여자">여자 <br>
+        최종학력 :
+        <select name="level">
+            <option>고졸</option>
+            <option>대졸</option>
+            <option>초대졸</option>
+            <option>대학원졸</option>
+            <option>박사</option>
+        </select> <br>
+        관심사항 :
+         <input type="checkbox" value="자바" id="java"> 자바
+         <input type="checkbox" value="c" id="c"> c
+         <input type="checkbox" value="web" id="web"> web
+         <input type="checkbox" value="python" id="python"> python
+         <br>
+         남기고 싶은말 : 
+         <textarea rows="10" cols="50" name="msg"></textarea><br>
+         <input type="button" value="회원가입" onclick="send()">
+    </form>
+</body>
+</html>

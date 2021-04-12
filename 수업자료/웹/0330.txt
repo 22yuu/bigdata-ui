@@ -1,0 +1,23 @@
+7. 함수 내장객체(array객체)
+	7.1 파라미터가 없고 리턴값이 없는 함수.
+		funcition func1( ) {
+			실행문..
+		}
+
+	7.2 파라미터가 있고 리턴값이 없는 함수
+	     파라미터의 갯수는 상관없다.
+		funcition func1( p1) {
+			실행문..
+		}
+	7.3 파라미터가 있고 리턴값이 있는 함수
+		리턴값은 only one.
+		funcition func1( p1) {
+			return 변수
+		}
+
+8. 내장 객체
+	var stopMenu=setInterval(2000);
+	clearInterval();
+	fadeIn(3000,"slowly");
+
+9. 배열 객체...

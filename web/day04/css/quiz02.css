@@ -1,0 +1,57 @@
+*{margin:0 auto; padding:0;list-style: none;}
+a { text-decoration: none;}
+
+header { width:1000px; height:110px; display: flex;}
+
+.logo{
+    width:250px; height: 110px;
+    background-color: yellow;
+}           
+.logo>img {width: 100%; height: 100%;}
+
+.menu { width:750px; height:110px; }
+.menu ul {justify-items: center; align-items: center; margin-top:25px;}
+.menu>ul>li {width:150px; float: left; margin-right:10px; text-align: center;padding:7px 0; transition:all 0.4s;}
+.menu>ul>li:hover { background-color: #18709c; color:#fff; cursor: pointer;}
+
+
+
+
+
+#back{width:1000px;height:350px; background-image: url("../back.jpg"); background-size: 100% 100%;}
+
+#contents {width:1000px; min-height: 500px; background-color: pink; display:flex}
+#contents .content-wrapper {width: 100%; min-height: 500px; border:1px solid #222}
+
+.table1 {
+    width: 400px;
+    border-collapse: collapse;
+    border: 1px solid black;;
+}
+
+.table1 tr>td { border:1px solid black; padding:5px;}
+.table1 tr>th { border:1px solid black; padding:5px;}
+.table1 tr:hover:not(:first-child):hover{background-color: orange; cursor: pointer;}
+
+footer{width:1000px;height:80px; background-color: aliceblue;}
+
+
+/*스마트폰에서 작동할 디자인*/
+@media(max-width:767px) {
+
+    header { width:100%; height:auto; display:block;}
+    
+    .logo { width: 100%; }
+    
+    .menu {width: 100%;}
+
+    #back, footer {
+        width:100%;
+    }
+
+    #contents { width: 100%;height:auto; display:block;}
+    .content-wrapper { width: 100%;}
+
+    .table1{ width: 80%;}
+    
+}

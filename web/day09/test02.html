@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" href="res/style06.css">
+    <script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script>
+        $(function(){
+            //1. 요소명.animate({css속성적용});
+            //2. 요소명.animate({css속성적용}, 1000);
+            //3. 요소명.animate({css속성적용}, 1000, "swing");
+            //4. 요소명.animate({css속성적용}, 1000, "swing",function(){});
+
+            $(".btn1").click(function(){
+                $(".txt1").animate({marginLeft:"500px",fontSize:"30px"},
+                 2000, "linear");
+            });
+
+            $(".btn2").click(function(){
+                $(".txt2").animate({marginLeft:"+=50px"},1000);
+            });
+        });
+    </script>
+    <style>
+        .txt1 {background-color: aqua;}
+        .txt2 {background-color: pink;}
+    </style>
+</head>
+<body>
+    <p>
+        <button class="btn1"> 버튼1 </button>
+        <span class="txt1"> 500px 이동</span> <br>
+        <button class="btn2"> 버튼2</button>
+        <span class="txt2"> 50px 이동</span>
+    </p>
+</body>
+</html>

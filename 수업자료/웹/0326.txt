@@ -1,0 +1,22 @@
+7. overflow
+
+8. 시만텍태그
+	8.1 header 	div id=header
+	8.2 nav	  	div id=nav
+	8.3 section	div id=contents
+	8.4 footer	div id=footer
+
+9. background...
+	9.1 background-color:???
+	9.2 background-img:url('경로');
+	9.3 background-repeat;
+	9.4 background-position;
+	9.5 background-size;
+
+10. 미디어쿼리....(반응형모델)  반응형 모델이 나타나면서 웹과 앱이 따로 분리하여 구현하였으나, 이제는 분리할 필요 없이 웹에서 한번 구현 가능해졌음
+	데스크탑 큰모니터(1200px 이상)
+	데스크탑 작은 모니터(노트북)(992~1199px)
+	태블릿 (768~991px)
+	스마트폰(~767px)
+	
+-> 산업 명세서에서 안내하고 있는 픽셀값 들임

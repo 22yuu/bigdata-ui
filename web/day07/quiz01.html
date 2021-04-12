@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+        var arrNo = new Array();
+        var arrName = new Array();
+        var arrKor = new Array();
+        var arrEng = new Array();
+        var arrMath = new Array();
+        var cnt = -1;
+
+        function input() {
+            cnt++;
+            arrNo[cnt] = frm1.stdno.value;
+            arrName[cnt]=frm1.name.value;
+            arrKor[cnt] = frm1.kor.value;
+            arrEng[cnt] = frm1.eng.value;
+            arrMath[cnt] = frm1.math.value;
+            frm1.stdno.value = "";
+            frm1.name.value = "";
+            frm1.kor.value = "";
+            frm1.eng.value = "";
+            frm1.math.value = "";
+            frm1.name.focus();
+        }
+
+
+        function hakjum(avg) {
+            if(avg >=90) {
+                return "수";
+            } else if (avg >=80){
+                return "미";
+            } else if (avg >= 70) {
+                return "양";
+            } else {
+                return "가";
+            }
+        }
+
+        function output() {
+            document.write("<table border='1'>");
+            document.write("<tr>");
+            document.write("<th>");
+            document.write("학번");
+            document.write("</th>");
+            document.write("<th>");
+            document.write("이름");
+            document.write("</th>");
+
+
+            document.write("<th>");
+            document.write("국어");
+            document.write("</th>");
+            document.write("<th>");
+            document.write("영어");
+            document.write("</th>");
+
+
+            document.write("<th>");
+            document.write("수학");
+            document.write("</th>");
+            document.write("<th>");
+            document.write("총점");
+            document.write("</th>");
+
+            document.write("<th>");
+            document.write("평균");
+            document.write("</th>");
+            document.write("<th>");
+            document.write("학점");
+            document.write("</th>");
+            document.write("</tr>");
+            // 루프문 시작
+
+            for(var i=0; i<=cnt;i++){
+                document.write("<tr>");
+                document.write("<td>");
+                document.write(arrNo[i]);
+                document.write("</td>");
+                document.write("<td>");
+                document.write(arrName[i]);
+                document.write("</td>");
+
+
+                document.write("<td>");
+                document.write(arrKor[i]);
+                document.write("</td>");
+                document.write("<td>");
+                document.write(arrEng[i]);
+                document.write("</td>");
+
+                document.write("<td>");
+                document.write(arrMath[i]);
+                document.write("</td>");
+                var total = parseInt(arrKor[i]) + parseInt(arrEng[i]) + parseInt(arrMath[i]);
+                var avg = total / 3;
+                document.write("<td>");
+                document.write(total);
+                document.write("</td>");
+
+                document.write("<td>");
+                document.write(avg);
+                document.write("</td>");
+                document.write("<td>");
+                document.write(hakjum(avg));
+                document.write("</td>");
+                document.write("</tr>");
+
+            }
+            
+
+            // 루프문 종료
+
+            document.write("</table>");
+        }
+
+	</script>
+</head>
+<body>
+    <form name="frm1">
+        학번:<input type="text" name="stdno"> <br>
+        이름:<input type="text" name="name"><br>
+        국어:<input type="text" name="kor"> <br>
+        영어:<input type="text" name="eng"><br>
+        수학:<input type="text" name="math"> <br>
+        <input type="button" value="입력" onclick="input()">
+        <input type="button" value="출력" onclick="output()">
+
+    </form>
+</body>
+</html>

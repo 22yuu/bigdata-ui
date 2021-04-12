@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            * { margin: 0 auto; padding: 0;}
+            table { border: 1px solid black; margin-top:50px;} 
+            table td {border: 1px solid black;}
+            table th {border: 1px solid black;}
+            table .title { width:150px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+            .btn1{
+                padding: 7px;
+                background-color: #222;
+                color:#fff;
+                border-radius: 5px;
+                cursor:pointer;
+                border:none;
+            }
+            .btn1:hover {
+                opacity: 0.5;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>이름</th>
+                <th>날짜</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><div class="title">안녕하세요</div></td>
+                <td>유관순</td>
+                <td>3.3</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><div class="title">열심히 해보아요</div></td>
+                <td>윤봉길</td>
+                <td>3.4</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><div class="title">올해는 무조건 구매할 거에요</div></td>
+                <td>안중근</td>
+                <td>3.5</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><div class="title">반갑습니다.</div></td>
+                <td>홍길동</td>
+                <td>3.6</td>
+            </tr>
+            <tr>
+                <td colspan="4" align="center"><input type="button" value="공지 추가" class="btn1"></td>
+            </tr>
+        </table>
+    </body>
+</html>

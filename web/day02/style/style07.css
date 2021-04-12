@@ -1,0 +1,36 @@
+* {
+    margin:0 auto; padding: 0;
+    list-style: none; font-family: '맑은 고딕';
+}
+a{
+    text-decoration: none; color:inherit;
+}
+
+#wrapper {
+    width: 90%;
+    height: 500px;
+    border: 1px solid red;
+    margin: 30px auto;
+    margin-top: 100px;
+}
+
+.left {
+    width:10%;
+    height: 500px;
+    float: left;
+    background-color: orange;
+}
+
+.content {
+    width:85%;
+    height: 500px;
+    float: left;
+    background-color:#ddd;
+}
+
+.right {
+    width:5%;
+    height: 500px;
+    float: left;
+    background-color:blue;
+}

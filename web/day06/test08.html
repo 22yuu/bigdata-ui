@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+
+        /*
+            기본점수 40점
+            대졸 이상 10점 이하 5점
+            전공 10, 비전공 5
+            자격증 개당 5점
+            외국어 개당 5점
+
+            80점 이상 면접 합격
+
+            80점 미만 탈락
+        */
+        function send() {
+            var name = frm1.username.value;
+            var level = frm1.level.value;
+            var major = frm1.major.value;
+            var score = 40;
+
+
+            var license = 0;
+            var info = document.getElementById("info");
+            var com = document.getElementById("com");
+            var gtq = document.getElementById("gtq");
+            var web = document.getElementById("web");
+            var license = chk_license(info, com, gtq, web);
+
+            var lang = 0;
+            var eng = document.getElementById("eng");
+            var ch = document.getElementById("ch");
+            var jp = document.getElementById("jp");
+            var gr = document.getElementById("gr");
+            var lang = chk_lang(eng, ch, jp, gr);
+
+            if(level == '대졸' || level == '대학원' || level == '박사'){
+                score += 10;
+            } else {
+                score += 5;
+            }
+
+            if(major == '전공') {
+                score += 10;
+            } else {
+                score += 5;
+            }
+            score += license + lang;
+            
+            if(score >= 80) {
+                alert(score + " 축하드립니다. 당신은 당사의 면접에 지원을 할 수 있습니다!!! 합격을 기원합니다!!")
+            } else {
+                alert(score + " 죄송합니다. 당신은 역량이 부족하여 당사의 면접에 지원하실 수 없습니다.")
+            }
+
+        }
+
+        function chk_license(info, com, gtq, web) {
+            
+            var cnt = 0;
+            
+            if(info.checked) cnt++;
+            if(com.checked) cnt++;
+            if(gtq.checked) cnt++;
+            if(web.checked) cnt++;
+
+            return cnt*5;
+        }
+
+        function chk_lang(eng, ch, jp, gr) {
+            
+            var cnt = 0;
+
+            if(eng.checked) cnt++;
+            if(ch.checked) cnt++;
+            if(jp.checked) cnt++;
+            if(gr.checked) cnt++;
+
+            return cnt*5;
+        }
+	</script>
+</head>
+<body>
+    <form name="frm1">
+        이름 : <input type="text" name="username"> <br>
+        학력 : 
+        <select name="level">
+            <option>고졸</option>
+            <option>대졸</option>
+            <option>초대졸</option>
+            <option>대학원졸</option>
+            <option>박사</option>
+        </select> <br>
+        전공여부 : <input type="radio" name="major" value="전공">전공 <input type="radio" name="major" value="비전공">비전공 <br>
+
+        자격증 :
+         <input type="checkbox" value="정보처리" id="info"> 정보처리
+         <input type="checkbox" value="컴활" id="com"> 컴활
+         <input type="checkbox" value="gtq" id="gtq"> gtq
+         <input type="checkbox" value="웹딛자인기사" id="web"> 웹디자인기사
+         <br>
+
+         외국어 :
+         <input type="checkbox" value="영어" id="eng"> 영어
+         <input type="checkbox" value="중국어" id="ch"> 중국어
+         <input type="checkbox" value="일어" id="jp"> 일어
+         <input type="checkbox" value="독일어" id="gr"> 독일어
+         <br>
+
+         <input type="button" value="면접지원여부확인" onclick="send()">
+    </form>
+</body>
+</html>

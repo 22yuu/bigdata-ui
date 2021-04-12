@@ -1,0 +1,25 @@
+* {
+    margin:0 auto; padding: 0;
+    list-style: none; font-family: '맑은 고딕';
+}
+a{
+    text-decoration: none; color:inherit;
+}
+
+#header {
+    width: 1000px;
+    height: 110px;
+}
+
+.logo{
+    width:250px;
+    height: 110px;
+    background-color: red;
+    float: left;
+}
+
+.menu {
+    width: 750px;
+    height: 110px;
+    float: left;
+}

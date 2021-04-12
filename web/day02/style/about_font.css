@@ -1,0 +1,39 @@
+* {
+    margin:0 auto; padding:0;
+    list-style: none; font-family: '맑은 고딕';
+}
+
+a{ text-decoration: none; color:inherit}
+
+.grd1 {
+    width:500px; height:250px;
+    border: 1px dotted #000;
+    font-size:0.9em;
+    text-align: center;
+    color:#18709c;
+    font-weight:bold;
+    font-family: '궁서체';
+    line-height: 25px;
+}
+
+.grd2{
+    width: 500px; height: 150px;
+    border: 1px dotted #000;
+    text-align: center;
+    /*문장이 한줄일때 수직정렬기능으로 사용*/
+    line-height: 150px; /* 정적으로 준 height값과 같아야 한다.*/
+}
+
+/*웹폰트를 지정해보자.
+1. font.google.com에 접속
+2. 마음에 드는 폰트 글씨체 클릭
+3. select this style(하단)을 클릭
+4. 링크 부분 카피 후 hteml파일에 붙여넣기 수행
+5. 적용하고자 하는 클래스에 font-family 속성 카피
+*/
+
+.grd3 {
+    font-family: 'Noto Sans KR', sans-serif;
+    width:500px; height: 150px;
+    border:1px solid #000;
+}

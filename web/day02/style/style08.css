@@ -1,0 +1,17 @@
+* {
+    margin:0 auto; padding: 0;
+    list-style: none; font-family: '맑은 고딕';
+}
+
+a { text-decoration: none; color:inherit}
+
+/* 메뉴안의 자식들을 의미하는 > 표시 .menu1>li:nth-child(n) {}*/
+/*첫째 자식의 글자색을 초록색으로*/
+.menu1>li:nth-child(1) { color: green;}
+.menu1>li:nth-child(2) { font-weight: bold; color: red;}
+.menu1>li:last-child{color:blue;}
+
+.menu1>li:nth-child(2n) {font-size: 20px;} /*짝수*/
+
+.menu1>li:nth-child(2n-1):hover {font-size:10px;} /*홀수*/
+

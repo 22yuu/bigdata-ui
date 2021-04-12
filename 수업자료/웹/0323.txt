@@ -1,0 +1,33 @@
+프론트 엔드: html, css, javascript, jquery, bootstrap
+프로젝트.....
+개발 툴(에디터) -> 서브라임텍스트 + 크롬 + web폴더(바탕화면)
+sublimetext.com/3
+무료 에디터 실무 개발자가 선호하는 편 - 강사님 피셜
+
+1. html 웹의 뼈대를 갖추는 언어
+	1.1 문단 태그(br,p,hr,h1~h6,font)
+	1.2 이미지태그와 링크(img, a)
+	1.3 리스트태그 (ul, ol)
+	1.4 폼태그 (동적언어 (파이썬,자바)를 위한 인터페이스를 위한태그)
+		1.4.1 입력태그(text, textarea, password hidden)
+		1.4.2 선택태그(select, radio, checkbox)
+		1.4.3 실행태그(button, reset, submit)
+		1.4.4 파일선택태그, 히든태그(file, hidden)
+	1.5 테이블태그(input태그의 구조화를 위해 사용)
+		행과 열을 구성한 후 작성해주는 태그.
+		열을 합칙기 위해서 colspan="??"
+		행을 합치기 위해서 rowpan="??"
+
+2. css 뼈대를 이쁘게 화장해주는 언어
+3. javascript 이쁘게화장된 뼈대에 생동감을 주는 언어.
+	javascript를 인지할 수 있도록 웹서버를 깔아준다.
+	웹주소:autoset.net
+	주소창:lcoahost:8001/test01.html
+
+백엔드: python, R, db, java
+
+풀스택 개발자: 프론트 + 백엔드
+
+서비스: 웹 -> 앱 -> 사물인터넷 -> 빅데이터 -> 인공지능
+
+

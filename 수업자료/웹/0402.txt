@@ -1,0 +1,20 @@
+5. jquery의 효과.
+	5.1 숨김( hide(), fadeOut(), slideUp() )
+	5.2 노출( show(), fadeIn(), slideDown() )
+	5.3 animate(  )
+	
+	요소사용패턴.
+	$("요소선택").효과메서드()
+	$("요소선택").효과메서드(효과소요시간, 가속도, 콜백함수)
+	효과소요시간: 방법1 "slow", "normal", "fast"
+		      방법2 1,000 2,000 3,000(1초 2초 3초)
+	가속도: swing(처음과 끝은 빠르게) linear(일정한 속도)
+	콜백함수: 효과소요시가노가 가속도가 끝난 후 마지막에 실행함수
+		주로 생략한다.
+
+
+6. jquery + javascript를 응용한 다양한 실무적 기법.
+	6.1 메뉴만들기....(width slideUp, slideDown)
+
+외웁시다.
+Step 01. 기본메뉴 만들기 type1 (day08/menu01.html)

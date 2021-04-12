@@ -1,0 +1,5 @@
+1. front page with html, css, javascript, jquery
+
+2. database
+
+3. backend

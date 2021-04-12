@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+
+        /*
+            기본점수 40점
+            대졸 이상 10점 이하 5점
+            전공 10, 비전공 5
+            자격증 개당 5점
+            외국어 개당 5점
+
+            80점 이상 면접 합격
+
+            80점 미만 탈락
+        */
+        function send() {
+            var name = frm1.username.value;
+            var grade;
+            var major;
+            var cert = 0;
+            var lang = 0;
+            var score = 40;
+
+            grade = parseInt(frm1.grade.value);
+            major = parseInt(frm1.major.value);
+
+            if(document.getElementById("chk1").checked ) {
+                cert += 5;
+            }
+            if(document.getElementById("chk2").checked ) {
+                cert += 5;
+            }
+            if(document.getElementById("chk3").checked ) {
+                cert += 5;
+            }
+            if(document.getElementById("chk4").checked ) {
+                cert += 5;
+            }
+            if(document.getElementById("chk5").checked ) {
+                lang += 5;
+            }
+            if(document.getElementById("chk6").checked ) {
+                lang += 5;
+            }
+            if(document.getElementById("chk7").checked ) {
+                lang += 5;
+            }
+            if(document.getElementById("chk8").checked ) {
+                lang += 5;
+            }
+
+            score = score + grade + major + cert + lang;
+            alert(score)
+        }
+	</script>
+</head>
+<body>
+    <form name="frm1">
+        이름 : <input type="text" name="username"> <br>
+        학력 : 
+        <select name="grade">
+            <option value="5">고졸</option>
+            <option value="10">대졸</option>
+            <option value="5">초대졸</option>
+            <option value="10">대학원졸</option>
+            <option value="10">박사</option>
+        </select> <br>
+        전공여부 : <input type="radio" name="major" value="10">전공 <input type="radio" name="major" value="5">비전공 <br>
+
+        자격증 :
+         <input type="checkbox" value="5" id="chk1"> 정보처리
+         <input type="checkbox" value="5" id="chk2"> 컴활
+         <input type="checkbox" value="5" id="chk3"> gtq
+         <input type="checkbox" value="5" id="chk4"> 웹디자인기사
+         <br>
+
+         외국어 :
+         <input type="checkbox" value="영어" id="chk5"> 영어
+         <input type="checkbox" value="중국어" id="chk6"> 중국어
+         <input type="checkbox" value="일어" id="chk7"> 일어
+         <input type="checkbox" value="독일어" id="chk8"> 독일어
+         <br>
+
+         <input type="button" value="면접지원여부확인" onclick="send()">
+    </form>
+</body>
+</html>
