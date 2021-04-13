@@ -1,0 +1,58 @@
+insert into member values('asdf','1234','홍길동', '부산진구', '1111', '회사원', '대졸','m');
+insert into member values('ssdf','5678','유관순', '부산진구', '2222', '선생님', '대졸','f');
+
+update member set tel='5555' where name='홍길동';
+select * from member where name='홍길동';
+
+delete from member where name = '유관순';
+
+ex) 우리 빅데이터전문가양성과정의 주소록을 작성한다.
+
+관리될 정보는 다음과 같다.
+이름,전화번호,주소,이메일,전공
+
+다음의 데이터를 입력한다.
+강석현,고현석,김동현,김민우,김승용,김영현,김예슬,김진성,김진우,박상준,박재형,신윤정,
+여병구,오유리,이지영,장경준,최현진,최형오,홍진섭
+
+
+김승용,김민우 학생의 전화번호를 수정하시오.
+이지영,장경준 학생의 이메일주소를 수정하시오.
+
+신윤정,김예슬 학생의 데이터를 삭제하시오.
+
+create table telBook(
+	id NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	name varchar(20),
+	tel varchar(20),
+	addr varchar(20),
+	email varchar(20),
+	major varhcar(20)
+);
+
+insert into telBook(name, tel, addr, email, major) values('강석현','1111','부산','1@a.com','컴공');
+insert into telBook(name, tel, addr, email, major) values('고현석','2222','부산','1@a.com','컴공');
+insert into telBook(name, tel, addr, email, major) values('김동현','3333','부산','1@a.com','컴공');
+insert into telBook(name, tel, addr, email, major) values('김민우','4444','부산','1@a.com','컴공');
+insert into telBook(name, tel, addr, email, major) values('김승용','5555','부산','1@a.com','컴공');
+insert into telBook(name, tel, addr, email, major) values('김영현','6666','부산','1@a.com','컴공');
+insert into telBook(name, tel, addr, email, major) values('김진성','7777','부산','1@a.com','컴공');
+insert into telBook(name, tel, addr, email, major) values('김진우','8888','부산','1@a.com','컴공');
+insert into telBook(name, tel, addr, email, major) values('박상준','9999','부산','1@a.com','컴공');
+insert into telBook(name, tel, addr, email, major) values('박재형','1212','부산','1@a.com','컴공');
+insert into telBook(name, tel, addr, email, major) values('여병구','1313','부산','1@a.com','컴공');
+insert into telBook(name, tel, addr, email, major) values('오유리','1414','부산','1@a.com','컴공');
+insert into telBook(name, tel, addr, email, major) values('이지영','1515','부산','1@a.com','컴공');
+insert into telBook(name, tel, addr, email, major) values('장경준','1616','부산','1@a.com','컴공');
+insert into telBook(name, tel, addr, email, major) values('최현진','1717','부산','1@a.com','컴공');
+insert into telBook(name, tel, addr, email, major) values('최형오','1818','부산','1@a.com','컴공');
+insert into telBook(name, tel, addr, email, major) values('홍진섭','1919','부산','1@a.com','컴공');
+
+
+member 테이블의 데이터를 사용자들이 편리하게 쓸 수 있도록 제작해보자.(웹개발)
+
+sql문장중에서 카운트함수를 알아두자.
+홍길동이라는 이름을 가진 사람이 몇명이냐?
+select count(*) from member where name='홍길동';
+
+select count(*) as cnt from member where name='홍길동';
