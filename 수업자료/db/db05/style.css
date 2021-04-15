@@ -1,0 +1,61 @@
+*{margin:0 auto; padding:0; list-style: none; font-family: "맑은 고딕";}
+a { text-decoration: none; color:inherit;}
+header {
+	width:1000px;
+	height:110px;
+	background-color: #18609c; color:#fff; 
+	text-align: center; font-size: 1.2em;
+}
+
+input[type="button"] { cursor: pointer;}
+
+.topmenu {
+	float:right; font-size:0.8em;
+	color:#e0e0e0;
+}
+
+#wrap {
+	width:1000px; display: flex;
+
+}
+.menu {
+	width:200px; min-height: 500px;margin:0;
+}
+.menubar{
+	text-align: center; 
+}
+.menubar>li {
+	padding: 7px 0; background: #18609c;
+	color: #fff; transition: all 0.4s; font-size: 0.9em;
+}
+.menubar>li:hover{background-color: orange;}
+
+.content{width:650px; min-height: 700px;
+    min-height: 540px;
+    padding: 40px;
+    margin-left: 5px;
+    border-radius: 10px;
+    border: 1px solid #f5f5f5;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #ccc;
+    margin:10px auto;
+    }
+.table1 {
+	border-collapse: collapse;
+	font-size:0.9em;
+	border:0px solid #ccc; margin-top:50px;
+	width:400px;
+}
+
+.table1 tr>th {padding:15px 0; border-bottom: 1px solid #ccc}
+.table1 tr>td {padding:7px 0; border-bottom: 1px solid #ccc; text-align: center;}
+.table1 tr:last-child >td { border:0; }
+
+.table-footer {     margin-top: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+    text-align: right; }
+
+.bt{ padding:5px; border: none; border-radius: 5px;background-color:#893700;color:#fff;}
+.bt:hover{opacity: 0.5;}
+footer {width:1000px; height: 150px; background-color: aliceblue;}
