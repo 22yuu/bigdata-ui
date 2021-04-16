@@ -1,0 +1,39 @@
+*페이징기법의 순서
+
+1. 현재 데이터의 건수를 10으로 나누어서 올림한다.
+그래서 페이지의 카운트를 구해서 미련없이 밑에 뿌려준다.
+
+2. 하단의 해당페이지를 찍으면 해당페이지의 데이터만 10건 뿌려준다.
+
+sql문장은 다음과 같다.
+$page = $_GET['page'];
+$startRow=($page-1)*10;
+
+select * from notice order by no desc limit $startRow, 10;
+select * from notice order by no desc limit 10, 10;
+select * from notice order by no desc limit 20, 10;
+select * from notice order by no desc limit 30, 10;
+select * from notice order by no desc limit 40, 10;
+select * from notice order by no desc limit 50 10;
+select * from notice order by no desc limit 60, 10;
+
+3. 해당페이지는 활성화시켜준다.
+알고리즘은 $page와 for문장의 $i의 값이 같은 것.
+
+
+4. 페이지를 그룹화시켜주고 시작 페이지와 엔드 페이지
+
+
+
+검색
+
+회식과 관련된 공지사항글을 찾고 싶다.
+
+select * from notice where content like '%회식%'; //내용
+
+select * from notice where title like '%회식%'; //제목
+
+
+과제
+
+notice.php           noitce_search.php
