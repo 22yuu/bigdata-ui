@@ -23,7 +23,7 @@ select * from notice order by no desc limit 60, 10;
 
 4. 페이지를 그룹화시켜주고 시작 페이지와 엔드 페이지
 
-
+create 
 
 검색
 
