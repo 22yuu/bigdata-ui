@@ -42,14 +42,38 @@ a { text-decoration: none; color: inherit; }
 	background-size: 100% 100%; margin: 0 auto;
 }
 
-.imgs {
+#imgSlider .imgs {
 	width: 100%; height: 100%;
 	overflow: hidden;
 	position: relative;
 }
 
 
-.imgs img {
+#imgSlider .imgs img {
 	width: 100%; height: 100%; position: absolute;
 	background-size: cover;
 }
+
+
+#contents {
+	width: 100%; max-width: 1280px; height: auto; margin:100px auto;
+}
+
+.recommand {
+	text-align: center; margin-bottom: 30px;
+}
+
+#recImgSlider {
+	width: 1200px; height: 280px;
+ 	overflow: hidden; position: relative;
+}
+
+#recImgSlider .imgs {
+	width: 2000px; height: 280px; position: absolute;
+}
+#recImgSlider .imgs li { width:280px; height:280px; margin-left:27px; float: left;}
+#recImgSlider .imgs img {
+	width:280px; height:280px;
+}
+
+footer {width:100%; height: 150px; background-color: aliceblue;}

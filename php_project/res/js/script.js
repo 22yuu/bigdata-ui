@@ -5,7 +5,8 @@ $(document).ready(function(){
 
 	start();
 	function start(){
-		$(".imgs img").eq(0).css("opacity","1");
+		$(".imgs li").eq(0).siblings().css("opacity","0");
+
 		setInterval(function(){
 			slide();
 		}, 2000)
@@ -17,7 +18,7 @@ $(document).ready(function(){
 		} else {
 			now++;
 		}
-		$(".imgs img").eq(now-1).stop().animate({"opacity": "0"},2000);
-		$(".imgs img").eq(now).stop().animate({"opacity": "1"},2000);
+		$(".imgs li").eq(now-1).stop().animate({"opacity": "0"},2000);
+		$(".imgs li").eq(now).stop().animate({"opacity": "1"},2000);
 	}
 });

@@ -1,3 +1,6 @@
+<?
+	session_start()
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,37 +14,66 @@
 
 <div id="header">
 	<div class="logo">
-		<a href="#">TRAVEL</a>
+		<a href="index.php">TRAVEL</a>
 	</div>
 	<div class="menu-wrap">
-		<ul class="menu">
-			<li >
-				<div style="border-bottom:1px solid #ddd; color: #222; height: 70px;"><a href="#">DOMESTIC</a></div></li>
-			<li><a href="oversea.php">OVERSEA</a></li>
-			<li><a href="login.php">LOGIN</a></li>
-			<li><a href="join.php">JOIN</a></li>		
-			<li><a href="qna.php">QnA</a></li>
-		</ul>
+		<?
+			if(isset($_SESSION["memberId"])) {
+		?>
+			<ul class="menu">
+				<li ><a style="border-bottom:1px solid #ddd; color: #222; height: 70px;" href="#">DOMESTIC</a></li>
+				<li><a href="oversea.php">OVERSEA</a></li>
+				<li><a href="logout.php">LOGOUT</a></li>
+				<li><a href="mypage.php">MYPAGE</a></li>		
+				<li><a href="qna.php">QnA</a></li>
+			</ul>
+		<?
+			}else {
+		?>
+			<ul class="menu">
+				<li ><a style="border-bottom:1px solid #ddd; color: #222; height: 70px;" href="#">DOMESTIC</a></li>
+				<li><a href="oversea.php">OVERSEA</a></li>
+				<li><a href="login.php">LOGIN</a></li>
+				<li><a href="join.php">JOIN</a></li>		
+				<li><a href="qna.php">QnA</a></li>
+			</ul>
+		<?
+		}
+		?>
 	</div>
 </div>
-<div>
-</div>
+
 <div id="imgSlider">
 	<div class="imgs">
 		<ul>
-			<li><img src="res/images/slide/domestic/1.jpg"></li>
-			<li><img src="res/images/slide/domestic/2.jpg"></li>
-			<li><img src="res/images/slide/domestic/3.jpg"></li>
-			<li><img src="res/images/slide/domestic/4.jpg"></li>
-			<li><img src="res/images/slide/domestic/5.jpg"></li>
+			<li><a href="#"><img src="res/images/slide/domestic/5.jpg"></a></li>
+			<li><a href="#"><img src="res/images/slide/domestic/4.jpg"></a></li>
+			<li><a href="#"><img src="res/images/slide/domestic/3.jpg"></a></li>
+			<li><a href="#"><img src="res/images/slide/domestic/2.jpg"></a></li>
+			<li><a href="#"><img src="res/images/slide/domestic/1.jpg"></a></li>
 		</ul>
 	</div>	
 </div>
-
+<div id="contents">
+	<div class="recommand">
+		<h1>추천 상품</h1>
+	</div>
+	<div id="recImgSlider">
+		<div class="imgs">
+			<ul>
+				<li><a href="#"><img src="res/images/prod_thum/domestic/domestic1.jpg"></a></li>
+				<li><a href="#"><img src="res/images/prod_thum/domestic/domestic2.jpg"></a></li>
+				<li><a href="#"><img src="res/images/prod_thum/domestic/domestic3.jpg"></a></li>
+				<li><a href="#"><img src="res/images/prod_thum/domestic/domestic4.jpg"></a></li>
+				<li><a href="#"><img src="res/images/prod_thum/domestic/domestic5.jpg"></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 
 
 <footer>
-	
+	푸터
 </footer>
 </body>
 </html>

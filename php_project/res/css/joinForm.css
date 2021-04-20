@@ -1,0 +1,96 @@
+* { list-style: none; margin: 0 auto; padding: 0; 	font-family: Gilroy,Spoqa Han Sans, sans-serif;}
+a { text-decoration: none; color: inherit; }
+
+#joinForm{
+	width:800px;
+    min-height: 600px;
+    padding: 40px;
+    margin-left: 5px;
+    border-radius: 10px;
+    border: 1px solid #f5f5f5;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #ccc;
+    margin:100px auto;
+    text-align: center;
+}
+
+#joinForm .title {
+	text-align: center;
+	letter-spacing: 6px;
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+}
+#joinForm .title a {
+	font-weight: 700;
+}
+
+
+input[type=tel] {
+	width: 280px; height: 48px; font-size: 13px; color: #373737; border: 1px solid #e8e8e8; background: #fff; text-decoration: none; text-indent: 20px;
+	display: block; margin-right: 20px;
+}
+input[type=text],
+input[type=password] {width:100%; height:48px; font-size:13px; color:#373737; border: 1px solid #e8e8e8; background: #fff; text-decoration: none; text-indent: 20px;}
+
+.form-group { 
+width:400px;
+height: 48px;
+font-family: inherit;	
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #212529;
+text-align: left;
+box-sizing: border-box;
+margin-bottom: 1rem;
+
+}
+
+.btn-primary {
+margin: 0;
+width:100%;
+font-family: inherit;
+overflow: visible;
+text-transform: none;
+display: inline-block;
+font-weight: 400;
+text-align: center;
+vertical-align: middle;
+user-select: none;
+border: 1px solid transparent;
+padding: .375rem .75rem;
+font-size: 1rem;
+line-height: 1.5;
+border-radius: .25rem;
+transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+color: #fff;
+background-color: #222;
+border-color: #222;
+cursor: pointer;
+}
+
+.btn-phone {
+margin: 0;
+width:100px;
+font-family: inherit;
+overflow: visible;
+text-transform: none;
+font-weight: 400;
+text-align: center;
+vertical-align: middle;
+user-select: none;
+border: 1px solid transparent;
+padding: .375rem .75rem;
+font-size: 1rem;
+line-height: 1.5;
+border-radius: .25rem;
+transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+color: #fff;
+background-color: #222;
+border-color: #222;
+cursor: pointer;
+}
+
+.born-date {
+	width: 120px; height: 48px;
+}
