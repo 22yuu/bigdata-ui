@@ -24,7 +24,7 @@ a { text-decoration: none; color: inherit; }
 	font-weight: 700;
 }
 
-
+input[type=email],
 input[type=tel] {
 	width: 280px; height: 48px; font-size: 13px; color: #373737; border: 1px solid #e8e8e8; background: #fff; text-decoration: none; text-indent: 20px;
 	display: block; margin-right: 20px;
@@ -42,9 +42,9 @@ line-height: 1.5;
 color: #212529;
 text-align: left;
 box-sizing: border-box;
-margin-bottom: 1rem;
-
+margin-bottom: 30px;
 }
+.form-group>div {font-size: 11px;}
 
 .btn-primary {
 margin: 0;

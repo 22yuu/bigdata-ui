@@ -15,8 +15,8 @@
 		<div class="slideText">
 			<a href="index.php"><h1>TRAVEL</h1></a>
 			<ul>
-				<li><a href="domestic.php">DOMESTIC</a></li>
-				<li><a href="oversea.php">OVERSEA</a></li>
+				<li><a href="views/domestic.php">DOMESTIC</a></li>
+				<li><a href="views/oversea.php">OVERSEAS</a></li>
 			</ul>
 		</div>
 		<ul class="imgs">
