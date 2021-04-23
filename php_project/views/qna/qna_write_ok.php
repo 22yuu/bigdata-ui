@@ -5,7 +5,7 @@
 	$content = $_POST["qna-content"];
 	$date = date("Y-m-d");
 	
-	$conn = mysqli_connect("localhost","root","autoset","travel");
+	$conn = mysqli_connect("localhost","yuubug","dlwlsdb11##","yuubug");
 	$sql = "insert into qna(title, content, writer,writeDate) values('$title', '$content','$writer', '$date')";
 	mysqli_query($conn, $sql);
 ?>

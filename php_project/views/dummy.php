@@ -1,5 +1,5 @@
 <?
-	$conn = mysqli_connect("localhost","root","autoset","travel");
+	$conn = mysqli_connect("localhost","yuubug","dlwlsdb11##","yuubug");
 	$i = 1;
 	$date = date("Y-m-d");
 	while($i <=200) {

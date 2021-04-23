@@ -3,7 +3,7 @@
 	$memberId["memeberId"] = $_POST["memberId"];
 	echo "{\"memberId\":\"$memberId\"}";
 
-	$conn = mysqli_connect("localhost","root","autoset","travel");
+	$conn = mysqli_connect("localhost","yuubug","dlwlsdb11##","yuubug");
 	//$sql = "select count(*) as cnt from member where memberId = $memberId";
 	$sql = "select memberId from member where memberId = $memberId";
 	$rs = mysqli_query($conn, $sql);

@@ -2,7 +2,7 @@
 	session_start();
 	$memberId = $_SESSION["memberId"];
 
-	$conn = mysqli_connect("localhost","root","autoset","travel");
+	$conn = mysqli_connect("localhost","yuubug","dlwlsdb11##","yuubug");
 	$sql = "select * from member where memberId ='$memberId'";
 	$rs = mysqli_query($conn, $sql);
 	$row = mysqli_fetch_array($rs);
@@ -13,16 +13,17 @@
 	<meta charset="utf-8">
 	<title></title>
 	<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="/project/res/css/common.css">
-	<link rel="stylesheet" type="text/css" href="/project/res/css/joinForm.css">
-	<link rel="stylesheet" type="text/css" href="/project/res/css/mypage.css">
-	<script type="text/javascript" src="/project/res/js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="/res/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/res/css/joinForm.css">
+	<link rel="stylesheet" type="text/css" href="/res/css/mypage.css">
+	<script type="text/javascript" src="/res/js/script.js"></script>
+	<script type="text/javascript" src="/res/js/join.js"></script>
 </head>
 <body>
 
 <div id="header">
 	<div class="logo">
-		<a href="/project/index.php">TRAVEL</a>
+		<a href="/index.php">TRAVEL</a>
 	</div>
 	<div class="menu-wrap">
 		<ul class="menu">
@@ -42,42 +43,42 @@
 		<ul>
 			<li>
 				<a href="reservation.php">
-					<img src="/project/res/images/mypage/ico_mypage_06.png">
+					<img src="/res/images/mypage/ico_mypage_06.png">
 					<span>예약 조회</span>
 				</a>
 			</li>
 			<li class="on">
 				<a href="memberEdit.php">
-					<img src="/project/res/images/mypage/ico_my_m.gif">
+					<img src="/res/images/mypage/ico_my_m.gif">
 					<span  class="on">회원 수정</span>
 				</a>
 			</li>
 			<li>
 				<a href="point.php">
-					<img src="/project/res/images/mypage/ico_mypage_02.png">
+					<img src="/res/images/mypage/ico_mypage_02.png">
 					<br>
 					<span>포인트</span>
 				</a>
 			</li>
 			<li>
 				<a href="coupon.php">
-					<img src="/project/res/images/mypage/ico_mypage_03.png">
+					<img src="/res/images/mypage/ico_mypage_03.png">
 					<br>
 					<span>쿠폰</span>
 				</a>
 			</li>
 			<li>
 				<a href="faq.php">
-					<img src="/project/res/images/mypage/ico_mypage_05.png">
+					<img src="/res/images/mypage/ico_mypage_05.png">
 					<br>
 					<span>FAQ</span>
 				</a>
 			</li>
 		</ul>
 	</div>
-	<form action="edit_ok.php" method="post" name="join_form"> <!-- 로그인하는 것은 Select 하는 것 -->
+	<form action="memberEdit_ok.php" method="post" name="join_form"> <!-- 로그인하는 것은 Select 하는 것 -->
 	  <div class="form-group">
-	  	<input type="hidden" name="prevPage" value="<?=$prevPage?>">
+	  	<input type="hidden" name="no" value="<?=$row['no']?>">
 	    <input type="text" name="username" class="form-control" placeholder="이름을 입력해주세요." id="username" value="<?=$row['name']?>"readonly>
 	    <div id="nameCheck"></div>
 	  </div>
@@ -119,7 +120,7 @@
 </footer>
 </body>
 </html>
-<script type="text/javascript">
+<script type="text/javascript" charset="utf-8">
 	
 	function withdrawal() {
 		if(confirm("정말로 탈퇴하시겠습니까?")){

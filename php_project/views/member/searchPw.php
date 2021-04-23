@@ -8,13 +8,13 @@
 	<title></title>
 	<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
 	<!-- css -->
-	<link rel="stylesheet" type="text/css" href="/project/res/css/common.css">
-	<link rel="stylesheet" type="text/css" href="/project/res/css/loginForm.css">
+	<link rel="stylesheet" type="text/css" href="/res/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/res/css/loginForm.css">
 	
 	<!-- js -->
-	<script type="text/javascript" src="/project/res/js/script.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/res/js/script.js"></script>
 
-	<script>
+	<script charset="utf-8">
 		function login_check() {
 			if(searchPw_form.memberId.value == "") {
 				alert("이름을 입력해주세요...!");
@@ -37,7 +37,7 @@
 <body>
 <div id="header">
 	<div class="logo">
-		<a href="/project/index.php">TRAVEL</a>
+		<a href="/index.php">TRAVEL</a>
 	</div>
 	<div class="menu-wrap">
 		<ul class="menu">
@@ -51,7 +51,7 @@
 </div>
 <div id="loginForm">
 	<div class="title">
-		<a href="/project/index.php">TRAVEL</a>
+		<a href="/index.php">TRAVEL</a>
 		<br>
 		<span style="font-size: 1.5rem;">비밀번호 찾기</span>
 	</div>

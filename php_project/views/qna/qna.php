@@ -13,7 +13,7 @@
 
 	$session_value = (isset($_SESSION["memberId"]))?$_SESSION["memberId"]:'';
 	
-	$conn = mysqli_connect("localhost","root","autoset","travel");
+	$conn = mysqli_connect("localhost","yuubug","dlwlsdb11##","yuubug");
 	$sql = "select * from qna order by no desc limit $startRow, 10";
 	$rs = mysqli_query($conn, $sql);
 
@@ -34,16 +34,16 @@
 	<title></title>
 	<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
 	<!-- css -->
-	<link rel="stylesheet" type="text/css" href="/project/res/css/common.css">
-	<link rel="stylesheet" type="text/css" href="/project/res/css/qna.css">
+	<link rel="stylesheet" type="text/css" href="/res/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/res/css/qna.css">
 	
 	<!-- js -->
-	<script type="text/javascript" src="/project/res/js/script.js"></script>
+	<script type="text/javascript" src="/res/js/script.js"></script>
 </head>
 <body>
 <div id="header">
 	<div class="logo">
-		<a href="/project/index.php">TRAVEL</a>
+		<a href="/index.php">TRAVEL</a>
 	</div>
 	<div class="menu-wrap">
 		<?
@@ -61,7 +61,7 @@
 		?>
 			<ul class="menu">
 				<li ><a href="../domestic.php">DOMESTIC</a></li>
-				<li><a href="../oversea.php">OVERSEA</a></li>
+				<li><a href="../oversea.php">OVERSEAS</a></li>
 				<li><a href="../member/login.php">LOGIN</a></li>
 				<li><a href="../member/join.php">JOIN</a></li>		
 				<li><a style="border-bottom:1px solid #ddd; color: #222; height: 70px;" href="#">QnA</a></li>
@@ -168,7 +168,7 @@
 
 </body>
 </html>
-<script type="text/javascript">
+<script type="text/javascript" charset="utf-8">
 	
 	function loginCheck() {
 		var session='<? echo $session_value ?>';

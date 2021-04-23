@@ -7,15 +7,15 @@
 	<meta charset="utf-8">
 	<title></title>
 	<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="/project/res/css/common.css">
-	<link rel="stylesheet" type="text/css" href="/project/res/css/mypage.css">
-	<script type="text/javascript" src="/project/res/js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="/res/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/res/css/mypage.css">
+	<script type="text/javascript" src="/res/js/script.js"></script>
 </head>
 <body>
 
 <div id="header">
 	<div class="logo">
-		<a href="/project/index.php">TRAVEL</a>
+		<a href="/index.php">TRAVEL</a>
 	</div>
 	<div class="menu-wrap">
 		<ul class="menu">
@@ -35,33 +35,33 @@
 		<ul>
 			<li class="on">
 				<a href="reservation.php">
-					<img src="/project/res/images/mypage/ico_mypage_06.png">
+					<img src="/res/images/mypage/ico_mypage_06.png">
 					<span class="on">예약 조회</span>
 				</a>
 			</li>
 			<li>
 				<a href="memberEdit.php">
-					<img src="/project/res/images/mypage/ico_my_m.gif">
+					<img src="/res/images/mypage/ico_my_m.gif">
 					<span>회원 수정</span>
 				</a>
 			</li>
 			<li>
 				<a href="point.php">
-					<img src="/project/res/images/mypage/ico_mypage_02.png">
+					<img src="/res/images/mypage/ico_mypage_02.png">
 					<br>
 					<span>포인트</span>
 				</a>
 			</li>
 			<li>
 				<a href="coupon.php">
-					<img src="/project/res/images/mypage/ico_mypage_03.png">
+					<img src="/res/images/mypage/ico_mypage_03.png">
 					<br>
 					<span>쿠폰</span>
 				</a>
 			</li>
 			<li>
 				<a href="faq.php">
-					<img src="/project/res/images/mypage/ico_mypage_05.png">
+					<img src="/res/images/mypage/ico_mypage_05.png">
 					<br>
 					<span>FAQ</span>
 				</a>

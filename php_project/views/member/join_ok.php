@@ -13,13 +13,13 @@
 
 	$birthday = $yyyy.$mm.$dd;
 	//echo $birthday;
-	$conn = mysqli_connect("localhost","root","autoset","travel");
+	$conn = mysqli_connect("localhost","yuubug","dlwlsdb11##","yuubug");
 	$sql = "insert into member(name, memberId,pw, phone,email, bornDate) values('$name', '$memberId','$pw','$phone','$email','$birthday')";
 	mysqli_query($conn, $sql);
 
 	$_SESSION["memberId"] = $memberId;
 ?>
 <meta http-equiv="refresh" content="0;url=<?=$prevPage?>">
-<script type="text/javascript">
+<script type="text/javascript" charset="utf-8">
 	alert("회원가입이 완료되었습니다.");
 </script>

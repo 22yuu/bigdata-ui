@@ -5,7 +5,7 @@
 	$writer = $_SESSION["memberId"];
 	$writeDate = date("Y-m-d");
 
-	$conn = mysqli_connect("localhost", "root","autoset","travel");
+	$conn = mysqli_connect("localhost", "yuubug","dlwlsdb11##","yuubug");
 	$sql = "insert into qna_re(content, writer, writeDate, p_no) values('$content','$writer','$writeDate','$p_no')";
 	mysqli_query($conn, $sql);
 ?>

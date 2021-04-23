@@ -16,21 +16,21 @@
 	<title></title>
 	<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
 	<!-- css -->
-	<link rel="stylesheet" type="text/css" href="/project/res/css/common.css">
-	<link rel="stylesheet" type="text/css" href="/project/res/css/joinForm.css">
+	<link rel="stylesheet" type="text/css" href="/res/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/res/css/joinForm.css">
 	
 	<!-- js -->
-	<script type="text/javascript" src="/project/res/js/join.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/res/js/join.js"></script>
 </head>
 <body>
 <div id="header">
 	<div class="logo">
-		<a href="/project/index.php">TRAVEL</a>
+		<a href="/index.php">TRAVEL</a>
 	</div>
 	<div class="menu-wrap">
 		<ul class="menu">
 			<li ><a href="../domestic.php">DOMESTIC</a></li>
-			<li><a href="../oversea.php">OVERSEA</a></li>
+			<li><a href="../oversea.php">OVERSEAS</a></li>
 			<li><a href="login.php">LOGIN</a></li>
 			<li><a style="border-bottom:1px solid #ddd; color: #222; height: 70px;" href="#">JOIN</a></li>		
 			<li><a href="../qna/qna.php">QnA</a></li>
@@ -39,7 +39,7 @@
 </div>
 <div id="joinForm">
 	<div class="title">
-		<a href="/project/index.php">TRAVEL</a>
+		<a href="/index.php">TRAVEL</a>
 		<br>
 		<span style="font-size: 1.5rem;">JOIN</span>
 	</div>
@@ -50,9 +50,8 @@
 	    <input type="text" name="username" class="form-control" placeholder="이름을 입력해주세요." id="username">
 	    <div id="nameCheck"></div>
 	  </div>
-	  <div class="form-group" style="display: flex">
+	  <div class="form-group">
 	  	<input type="text" name="memberId" class="form-control" placeholder="아이디를 입력해주세요." id="memberId">
-	  	<input type="button" name="btn_idCheck" class="btn btn-primary" value="중복검사" onclick="idCheck()">
 	    <div id="idCheck"></div>
 	  </div>
 	  
@@ -86,7 +85,7 @@
 <footer></footer>
 </body>
 </html>
-<script type="text/javascript">
+<script type="text/javascript" charset="utf-8">
 	
 	function request_phone() {
 		alert("준비중");

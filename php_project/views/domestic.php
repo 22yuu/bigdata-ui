@@ -14,7 +14,7 @@
 
 <div id="header">
 	<div class="logo">
-		<a href="/project/index.php">TRAVEL</a>
+		<a href="/index.php">TRAVEL</a>
 	</div>
 	<div class="menu-wrap">
 		<?
@@ -157,11 +157,11 @@
 									<span>국내여행</span>
 								</span>
 							</span>
-							<img src="../res/images/prod_thum/domestic/domestic5.jpg">
+							<img src="../res/images/prod_thum/domestic/domestic4.jpg">
 						</span>
 						<div class="pdt_list_info">
 							<h5 class="tit_list_block">
-								[제주에어카텔/세계유산축전] 항공+ 더 그랜드  섬오름+렌터카2박3일
+								[제주에어카텔/세계유산축전] 항공+ 더 그랜드 섬오름+렌터카2박3일
 							</h5>
 							<span class="list_price">
 								<em>

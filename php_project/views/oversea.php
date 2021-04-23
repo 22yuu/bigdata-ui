@@ -14,7 +14,7 @@
 
 <div id="header">
 	<div class="logo">
-		<a href="/project/index.php">TRAVEL</a>
+		<a href="/index.php">TRAVEL</a>
 	</div>
 	<div class="menu-wrap">
 		<?
@@ -32,7 +32,7 @@
 		?>
 			<ul class="menu">
 				<li ><a href="domestic.php">DOMESTIC</a></li>
-				<li><a style="border-bottom:1px solid #ddd; color: #222; height: 70px;" href="#">OVERSEA</a></li>
+				<li><a style="border-bottom:1px solid #ddd; color: #222; height: 70px;" href="#">OVERSEAS</a></li>
 				<li><a href="member/login.php">LOGIN</a></li>
 				<li><a href="member/join.php">JOIN</a></li>		
 				<li><a href="qna/qna.php">QnA</a></li>
@@ -69,29 +69,7 @@
 									<span>해외여행</span>
 								</span>
 							</span>
-							<img src="../res/images/prod_thum/oversea/3.jpg">
-						</span>
-						<div class="pdt_list_info">
-							<h5 class="tit_list_block">
-								[3박4일 패키지]제주 중문롯데호텔 2박(항공+렌트3일)+서울 소공동 롯데호텔 1박
-							</h5>
-							<span class="list_price">
-								<em>
-									<strong>668,000</strong>원~
-								</em>
-							</span>
-						</div>					
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="thum_pic">
-							<span class="tag">
-								<span class="tag_square ovs">
-									<span>해외여행</span>
-								</span>
-							</span>
-							<img src="../res/images/prod_thum/oversea/4.jpg">
+							<img src="/res/images/prod_thum/oversea/3.jpg">
 						</span>
 						<div class="pdt_list_info">
 							<h5 class="tit_list_block">
@@ -113,7 +91,7 @@
 									<span>해외여행</span>
 								</span>
 							</span>
-							<img src="../res/images/prod_thum/oversea/1.jpg">
+							<img src="/res/images/prod_thum/oversea/4.jpg">
 						</span>
 						<div class="pdt_list_info">
 							<h5 class="tit_list_block">
@@ -135,7 +113,7 @@
 									<span>해외여행</span>
 								</span>
 							</span>
-							<img src="../res/images/prod_thum/oversea/2.jpg">
+							<img src="/res/images/prod_thum/oversea/1.jpg">
 						</span>
 						<div class="pdt_list_info">
 							<h5 class="tit_list_block">
@@ -157,7 +135,7 @@
 									<span>해외여행</span>
 								</span>
 							</span>
-							<img src="../res/images/prod_thum/oversea/5.jpg">
+							<img src="/res/images/prod_thum/oversea/2.jpg">
 						</span>
 						<div class="pdt_list_info">
 							<h5 class="tit_list_block">
